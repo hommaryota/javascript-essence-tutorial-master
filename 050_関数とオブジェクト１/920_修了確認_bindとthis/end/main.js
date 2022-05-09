@@ -12,11 +12,11 @@ const person = {
      * 1秒後に"hello Tom"
      * と出力されるような、メソッドを
      * personオブジェクトに追加してみてください。
-     * 
+     *
      * 以下のように使用するものとします。
-     * `person.hello1s()` 
+     * `person.hello1s()`
      * -> 1秒後に"hello Tom"と出力
-     * 
+     *
      * 3通りの方法で実装してみてください。
      * １．bind
      * ２．アロー関数
@@ -59,4 +59,4 @@ person.hello1s();
  * "Bye"しか表示されませんでした。
  * "Bye Tom"とするためにはどうすればよいでしょうか？
  */
-// setTimeout(person.bye.bind(person), 1000);
+setTimeout(person.bye.bind(person), 1000);

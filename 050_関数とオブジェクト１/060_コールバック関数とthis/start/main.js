@@ -6,4 +6,11 @@ const person = {
         console.log('Hello ' + this.name);
     }
 }
+
 person.hello();
+
+function fn(ref) {
+    ref();
+}
+
+fn(person.hello);

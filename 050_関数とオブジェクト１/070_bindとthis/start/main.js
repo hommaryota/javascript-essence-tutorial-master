@@ -8,8 +8,18 @@ const person = {
 }
 person.hello();
 
+// bindの引数がthisの参照先に設定する
+const helloTom = person.hello.bind(person);
+
 function fn(ref) {
     ref();
 }
 
-fn(person.hello);
+fn(helloTom);
+
+function a(name) {
+    console.log('hello ' + name);
+}
+
+const b = a.bind(null, 'Tim');
+b();
